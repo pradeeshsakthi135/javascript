@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea shop</title>
+</head>
+<body>
+    <h1> TEA SHOP</h1>
+    <script>
+        var teaShopName = "PRADEESH TEA SHOP" 
+        console.log(teaShopName);
+
+        var teaShopAddress = "AYANAVARAM CHENNAI"
+        console.log(teaShopAddress);
+
+        let contactNumber = "9342983135"
+        console.log(contactNumber);
+
+        let shopCategory1 = {category1 : "tea",category2 : "coffee", category3 : "Boost", category4 : "Horlicks"}
+        console.log(shopCategory1.category1);
+        let teaCategory = ["Normaltea"  , "filtertea" , "Gingertea"];
+        console.log(teaCategory);
+        let tea_prices = {Normaltea :"20" , filtertea : "15" , Gingertea : "22"}
+        console.log(tea_prices);
+
+
+        let shopCategory2 = {category1 : "tea",category2 : "coffee", category3 : "Boost", category4 : "Horlicks"}
+        console.log(shopCategory1.category1);
+        let coffeeCategory = ["Normalcoffee"  , "filtercoffee" , "Gingercoffee"];
+        console.log(coffeeCategory);
+        let coffee_prices = {Normalcoffee :"20" , filtercoffee : "15" , Gingercoffee : "22"}
+        console.log(coffee_prices);
+
+
+        let shopCategory3= {category1 : "tea",category2 : "coffee", category3 : "Boost", category4 : "Horlicks"}
+        console.log(shopCategory1.category1);
+        let BoostCategory = ["NormalBoost"  , "filterBoost" , "GingerBoost"];
+        console.log(BoostCategory);
+        let Boost_prices = {NormalBoost :"20" , filterBoost : "15" , GingerBoost : "22"}
+        console.log(Boost_prices);
+
+
+        let shopCategory4 = {category1 : "tea",category2 : "coffee", category3 : "Boost", category4 : "Horlicks"}
+        console.log(shopCategory1.category1);
+        let horlicksCategory = ["Normalhorlicks"  , "filterhorlicks" , "Gingertea"];
+        console.log(teaCategory);
+        let horlicks_prices = {Normalhorlicks :"20" , filterhorlicks : "15" , Gingerhorlicks : "22"}
+        console.log(horlicks_prices);
+
+        const order_menu = (orders)=>{
+            console.log(orders);
+        }   
+
+        order_menu("customer : i want tea");
+
+        const order_menu1 = (orders)=>{
+            console.log(orders);
+        }   
+
+        order_menu("customer : Tea is not avaliable");
+
+        //let teaAvailable = "I want tea"
+        //console.log(tea avaliable):
+
+        //let tea_avaliable = "Tea is not avaliable"
+
+        //if (tea_avaliable === "tea is avaliable"){
+        // console.log("okay wait for 10 mins")
+        //}else{
+        //    console.log("tea is not avaliable, please order another item")
+        //}
+
+        let coffeeavaliable =  "customer : okay i want coffee"
+        console.log(coffeeavaliable)
+
+        const coffee_request = (order)=>{
+            if (order === "filtercoffee"){
+                console.log("waiter : yes please wait for 5 min");
+            } else {
+                console.log("coffee is not avaliable,sorry");
+            }
+        }
+        
+        coffee_request("filtercoffee");
+        // let Boost_available = "Boost is available";
+
+    // if (Boost_available== "Boost is available") {
+    //     console.log("waiter : yes  please Wait for 5 min please");
+        
+    // } else {
+    //     console.log("Boost is not available,sorry");
+        
+        
+    // }
+
+      const BoostAvailable = (Boostready)=>{
+            console.log(Boostready);
+            
+        }
+        BoostAvailable("waiter : Your Boost is ready");
+
+    const billAmount = ()=>{
+        console.log("customer : what is the price of Boost");
+        
+    }
+    billAmount();
+
+    const BillAmount = ()=>{
+        console.log("owner : The price of Boost is 40");
+        
+    }
+    BillAmount();
+
+    const PaymentMethod = ()=>{
+        console.log("owner : What is your payment method");
+        
+    }
+    PaymentMethod();
+
+
+    
+    
+     const paymentMethod = ()=> {
+        console.log("customer  : Gpay");
+        
+     }
+    paymentMethod();
+
+    const paymentStatus = ()=>{
+        console.log("customer :  I Paid");
+        
+    }
+    paymentStatus();
+
+     const payment_Status = ()=>{
+        console.log("owner : Thank you sir");
+        
+    }
+    payment_Status();
+
+
+        </script>
+</body>
+</html>
