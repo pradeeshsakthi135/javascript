@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM INTRO</title>
+</head>
+<body>
+  <h1 id="front" style="background-color: black; color: white; padding: 10px; text-align: center;">
+    WELCOME TO AMMAN BAKERY
+  </h1>
+
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <button id="list" style="font-size:20px; background-color: black; color: white; margin-top: 10px; padding: 10px;">
+      AVAILABLE PRODUCTS
+    </button>
+  </div>
+
+  <div id="listitems" style="display: none; justify-content: center; align-items: center; gap: 10px; margin-top: 10px;">
+    <button id="ordertea" style="color: white; background-color: black; font-size: 20px;">TEA</button>
+    <button id="ordercoffee" style="color: white; background-color: black; font-size: 20px;">COFFEE</button>
+    <button id="orderboost" style="color: white; background-color: black; font-size: 20px;">BOOST</button>
+    <button id="orderhorlicks" style="color: white; background-color: black; font-size: 20px;">HORLICKS</button>
+  </div>
+
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <button id="payment" style="background-color: black; color: white; margin-top: 20px; font-size: 25px; padding: 10px; display: none;">
+      PAYMENT
+    </button>
+  </div>
+
+  <div id="image" style="text-align: center; margin-top: 20px;"></div>
+
+  <script>
+    let buttonlist = document.getElementById("list");
+    let tolist = document.getElementById("listitems");
+    let ordertea = document.getElementById("ordertea");
+    let ordercoffee = document.getElementById("ordercoffee");
+    let orderboost = document.getElementById("orderboost");
+    let orderhorlicks = document.getElementById("orderhorlicks");
+    let paymentfororders = document.getElementById("payment");
+    let imagedisplay = document.getElementById("image");
+
+    buttonlist.addEventListener("click", () => {
+      tolist.style.display = "flex";
+    });
+
+    ordertea.addEventListener("click", () => {
+      paymentfororders.style.display = "block";
+      paymentfororders.innerHTML = "Please pay ₹20 for TEA";
+      imagedisplay.innerHTML = '<img src="D:/frontend/Javascript/DOM/1.jpeg" width="200">';
+    });
+
+    ordercoffee.addEventListener("click", () => {
+      paymentfororders.style.display = "block";
+      paymentfororders.innerHTML = "Please pay ₹20 for COFFEE";
+      imagedisplay.innerHTML = '<img src="D:/frontend/Javascript/DOM/2.jpeg" width="200">';
+    });
+
+    orderboost.addEventListener("click", () => {
+      paymentfororders.style.display = "block";
+      paymentfororders.innerHTML = "Please pay ₹20 for BOOST";
+      imagedisplay.innerHTML = '<img src="D:/frontend/Javascript/DOM/3.jpeg" width="200">';
+    });
+
+    orderhorlicks.addEventListener("click", () => {
+      paymentfororders.style.display = "block";
+      paymentfororders.innerHTML = "Please pay ₹20 for HORLICKS";
+      imagedisplay.innerHTML = '<img src="D:/frontend/Javascript/DOM/4.jpeg" width="200">';
+    });
+
+    paymentfororders.addEventListener("click", () => {
+      alert("ENJOY YOUR DRINK ");
+    });
+  </script>
+</body>
+</html>
