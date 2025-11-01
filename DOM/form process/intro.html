@@ -1,0 +1,75 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form process</title>
+</head>
+<input type="text" id="inputdatas" placeholder="search product">
+<button id="btn">click</button>
+<p id="result"></p>
+<img  src="" id="images" alt="order" >
+
+
+
+
+
+<body>
+    <script>
+        const btn=document.getElementById("btn")
+         btn.addEventListener('click',(i)=>{
+         const img=document.getElementById("images")
+         const data=document.getElementById("inputdatas").value
+         const result1=document.getElementById("result");
+         result1.textContent=`your search result:${result1}`
+         
+         
+         if(data==="ajith"){
+            img.src="../../DOM/form process/assest/Ajith Kumar .jpg.jpeg";
+            result1.textContent="your result ajith";
+
+         }else if(data==="vijay"){
+          img.src="../../DOM/form process/assest/vijay.jpg.jpeg";
+          result1.textContent="your result is vijay";
+
+         }else if(data==="surya"){
+            img.src="../../DOM/form process/assest/surya.jpg.jpeg";
+            result1.textContent="your result is surya";
+
+         }else if(data==="vikram"){
+            img.src="../../DOM/form process/assest/vikram.jpg.jpeg";
+            result1.textContent="your result vikram";
+
+         } else if(data==="rajini") {
+          img.src="../../DOM/form process/assest/rajini.jpg.jpeg";
+          result1.textContent="your result is rajini";
+
+         }else if(data==="kamal"){
+            img.src="../../DOM/form process/assest/kamal.jpg.jpeg";
+            result1.textContent="your result is kamal";
+
+         }else if(data==="karthi"){
+            img.src="../../DOM/form process/assest/karthi.jpg.jpeg";
+            result1.textContent="your result is karthi";
+         
+
+         }else if(data==="dhruv vikram"){
+         img.src="../../DOM/form process/assest/dhruv vikram.jpg.jpeg";
+         result1.textContent="your result is dhruv vikram";
+
+             
+
+         }else if(data==="vikram"){
+         img.src="../../DOM/form process/assest/vikram.jpg.jpeg";
+         result1.textContent="your result is vikram";
+         
+         
+         }else{
+            img.src=""
+         }
+         });
+    </script>
+
+    
+</body>
+</html>
